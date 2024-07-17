@@ -11,8 +11,18 @@
 </head>
 
 <body>
-    hello World
-    <script type="module" src="app.js"></script>
+    <div style="display: flex;">
+        <form id="mainForm" style="margin-right: 100px;">
+            <input name="jobTitle" type="text">
+            <button type="submit">submit</button>
+        </form>
+        <button id="allJobs">show all saved jobs</button>
+
+        <button id="serverSource" style="position: absolute; top: 10px; right: 10px;">netlify</button>
+    </div>
+    <div id="showjob"></div>
+    <p id="loading" style="margin: auto;margin-top: 300px;text-align: center;display: none;">Loading...</p>
+    <script type="module" src="dist/bundle.js"></script>
 </body>
 
 </html>
