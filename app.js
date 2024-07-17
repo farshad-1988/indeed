@@ -15,3 +15,10 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+
+const myf = async () => {
+    const res = await axios.get("/.netlify/functions/test")
+    console.log(res.data)
+}
+myf()
