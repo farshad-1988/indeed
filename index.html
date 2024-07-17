@@ -9,7 +9,10 @@
 
 <body>
     hello
-    <script src="app.js"></script>
+    <script src="app.js">
+        const res = await axios.get("/.netlify/functions/test")
+        console.log(res.data)
+    </script>
 </body>
 
 </html>
