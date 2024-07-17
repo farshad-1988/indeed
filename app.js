@@ -48,9 +48,9 @@ document.getElementById("mainForm").addEventListener("submit", async (e) => {
             const titlespan = document.createElement("p")
             const titlelocation = document.createElement("p")
             const titlecompany = document.createElement("p")
-            titlespan.textContent = job.title
-            titlelocation.textContent = job.location
-            titlecompany.textContent = job.company
+            titlespan.textContent = "Title: " + job.title
+            titlelocation.textContent = "Location: " + job.location
+            titlecompany.textContent = "Company: " + job.company
             div.appendChild(titlespan)
             div.appendChild(titlelocation)
             div.appendChild(titlecompany)
@@ -101,9 +101,9 @@ document.getElementById("allJobs").addEventListener("click", async (e) => {
             const titlelocation = document.createElement("p")
             const titlecompany = document.createElement("p")
             jobId.textContent = "ID:" + job[0]
-            titlespan.textContent = job[1].title
-            titlelocation.textContent = job[1].location
-            titlecompany.textContent = job[1].company
+            titlespan.textContent = "Title: " + job[1].title
+            titlelocation.textContent = "Location: " + job[1].location
+            titlecompany.textContent = "Company: " + job[1].company
             div.appendChild(jobId)
             div.appendChild(titlespan)
             div.appendChild(titlelocation)
