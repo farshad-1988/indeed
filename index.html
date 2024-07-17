@@ -13,8 +13,11 @@
 <body>
     hello
     <script src="app.js">
-        const res = await axios.get("/.netlify/functions/test")
-        console.log(res.data)
+        const myf = async () => {
+            const res = await axios.get("/.netlify/functions/test")
+            console.log(res.data)
+        }
+        myf()
     </script>
 </body>
 
